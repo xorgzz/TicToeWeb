@@ -1,0 +1,91 @@
+body{
+	background-color: lightblue;
+	margin: 0px;
+}
+
+td.table{
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	border: 5px solid black;
+	border-collapse: collapse;
+
+}
+
+table{
+	margin-top: 40px;
+	border-collapse: collapse;
+}
+
+button{
+	height: 100%;
+	width: 100%;
+	border: none;
+	background-color: lightblue;
+	padding: 0px;
+
+}
+
+header{
+	text-align: center;
+	padding: 20px;
+	font-size: 40px;
+}
+
+td.bottom{
+	border-bottom: transparent;
+}
+
+td.top{
+	border-top: transparent;
+}
+
+td.left{
+	border-left: transparent;
+}
+
+td.right{
+	border-right: transparent;
+}
+
+.x{
+    position: relative;
+    height: 90px; 
+    width: 90px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.x::before,
+.x::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5px; /* cross thickness */
+    background-color: black;
+}
+
+.x::before {
+    transform: rotate(45deg);
+}
+
+.x::after {
+    transform: rotate(-45deg);
+}
+
+button#re{
+	border: solid 4px black;
+	border-radius: 500px;
+	width: 200px;
+	margin: 40px 0px 20px 0px;
+	padding: 10px;
+	font-size: 120%;
+	font-style: bold;
+}
+
+div#ending{
+	margin: 20px;
+	font-size: 500%;
+
+}

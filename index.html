@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>TicToe</title>
+	<!-- <meta http-equiv='refresh' content='0; URL=./main.php'> -->
+</head>
+<body>
+	<header>Tic Tac Toe</header>
+	<center>
+	<table cellspacing="0px">
+	<tr>
+		<td class="table top left"><button id="0" onclick="fill(0)"></button></td>
+		<td class="table top"><button id="1" onclick="fill(1)"></button></td>
+		<td class="table top right"><button id="2" onclick="fill(2)"></button></td>
+	</tr>
+	<tr>
+		<td class="table left"><button id="3" onclick="fill(3)"></button></td>
+		<td class="table"><button id="4" onclick="fill(4)"></button></td>
+		<td class="table right"><button id="5" onclick="fill(5)"></button></td>
+	</tr>
+	<tr>
+		<td class="table bottom left"><button id="6" onclick="fill(6)"></button></td>
+		<td class="table bottom"><button id="7" onclick="fill(7)"></button></td>
+		<td class="table bottom right"><button id="8" onclick="fill(8)"></button></td>
+	</tr>
+</table>
+<button id="re" onClick="reload()">Restart</button>
+<div id="ending"></div>
+</center>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
